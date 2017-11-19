@@ -102,6 +102,22 @@ int main(){
 		cout<<"Terima Kasih"<<endl;
 		break;
 		
-		
+		case 5:
+		cout <<"Masukkan Nilai : ";cin >>x;
+	
+		if (x>0){
+		cout <<"Nilai positif";
+		}else if (x<0){
+		cout <<"Nilai negatif";
+		}else {
+		cout <<"Nilai nol !!";
+		}
+		cout<<"\n";
+		cout<<"Kembali..?? [Y/T]";cin>>yt;
+		if(yt=='Y'||yt=='y')
+		goto atas;
+		else if(yt=='T'||yt=='t')
+		cout<<"\n";
+		cout<<"Terima Kasih"<<endl;	
 	}
 }
