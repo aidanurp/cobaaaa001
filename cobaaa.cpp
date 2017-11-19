@@ -17,5 +17,32 @@ int main(){
 	cout <<"3.Persegi panjang\n";
 	cout <<"4.Perhitungan Gaji Karyawan\n";
 	cout <<"5.Penentuan Nilai\n";
-	cout <<"Masukan Pilihan =";cin >>pilihan;	
+	cout <<"Masukan Pilihan =";cin >>pilihan;
+	
+	switch(pilihan){
+		case 1:
+		cout <<"Perhitungan berat badan\n";
+		cout <<"Masukkan berat badan : ";cin >>berat;
+		cout <<"Masukkan tinggi badan : ";cin >>Tinggi;
+	
+		cout <<"Hasil \n";
+		cout <<"Berat badan : "<<berat<<endl;
+		cout <<"Tinggi badan : "<<Tinggi<<endl;
+	
+		if (berat<Tinggi/2.5){
+		cout <<"Underweight";
+		}else if (Tinggi/2.3<berat){
+		cout <<"Overweight";
+		}else if (Tinggi/2.5 <=berat <=Tinggi/2.3){
+		cout <<"Normal!!";
+		}
+		cout<<"\n";
+		cout<<"Kembali..?? [Y/T]";cin>>yt;
+		if(yt=='Y'||yt=='y')
+		goto atas;
+		else if(yt=='T'||yt=='t')
+		cout<<"\n";
+		cout<<"Terima Kasih"<<endl;
+		break;
+	}
 }
