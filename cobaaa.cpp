@@ -64,5 +64,21 @@ int main(){
 		cout<<"\n";
 		cout<<"Terima Kasih"<<endl;
 		break;
+		
+		case 3:
+		cout<<"masukan panjang =";cin>>panjang;
+		cout<<"masukan lebar =";cin>>lebar;
+		luas =panjang * lebar;
+		cout<<"luas persegi panjang="<<luas<<"\n";
+		cout<<"Kembali..?? [Y/T]";cin>>yt;
+		if(yt=='Y'||yt=='y')
+		goto atas;
+		else if(yt=='T'||yt=='t')
+		cout<<"\n";
+		cout<<"Terima Kasih"<<endl;
+		break;
+		
+		
+		
 	}
 }
